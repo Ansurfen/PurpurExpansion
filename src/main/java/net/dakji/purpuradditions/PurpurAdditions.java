@@ -1,6 +1,7 @@
 package net.dakji.purpuradditions;
 
 import net.dakji.purpuradditions.block.PABlocks;
+import net.dakji.purpuradditions.item.PACreativeModeTabs;
 import net.dakji.purpuradditions.item.PAItems;
 
 import net.neoforged.api.distmarker.Dist;
@@ -21,6 +22,8 @@ public class PurpurAdditions {
     public PurpurAdditions(IEventBus modEventBus, ModContainer modContainer) {
 
         NeoForge.EVENT_BUS.register(this);
+
+        PACreativeModeTabs.register(modEventBus);
 
         PAItems.register(modEventBus);
         PABlocks.register(modEventBus);
