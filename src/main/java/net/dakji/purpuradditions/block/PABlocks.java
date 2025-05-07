@@ -29,6 +29,18 @@ public class PABlocks {
     public static final DeferredBlock<WallBlock> PURPUR_STONE_WALL = registerBlock("purpur_stone_wall", () ->
             new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
+    // ---- DARK PURPUR STONE ---- //
+    public static final DeferredBlock<Block> DARK_PURPUR_STONE = registerBlock("dark_purpur_stone", () ->
+            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<SlabBlock> DARK_PURPUR_STONE_SLAB = registerBlock("dark_purpur_stone_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final DeferredBlock<StairBlock> DARK_PURPUR_STONE_STAIRS = registerBlock("dark_purpur_stone_stairs", () ->
+            new StairBlock(PABlocks.DARK_PURPUR_STONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final DeferredBlock<WallBlock> DARK_PURPUR_STONE_WALL = registerBlock("dark_purpur_stone_wall", () ->
+            new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -2,5 +2,9 @@
   "block.purpuradditions.purpur_stone": "Roche purpur",
   "block.purpuradditions.purpur_stone_slab": "Dalle de roche purpur",
   "block.purpuradditions.purpur_stone_stairs": "Escalier en roche purpur",
-  "block.purpuradditions.purpur_stone_wall": "Muret de roche purpur"
+  "block.purpuradditions.purpur_stone_wall": "Muret de roche purpur",
+  "block.purpuradditions.dark_purpur_stone": "Roche purpur sombre",
+  "block.purpuradditions.dark_purpur_stone_slab": "Dalle de roche purpur sombre",
+  "block.purpuradditions.dark_purpur_stone_stairs": "Escalier en roche purpur sombre",
+  "block.purpuradditions.dark_purpur_stone_wall": "Muret de roche purpur sombre"
 }

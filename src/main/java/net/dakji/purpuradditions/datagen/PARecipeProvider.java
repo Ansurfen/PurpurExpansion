@@ -33,10 +33,27 @@ public class PARecipeProvider extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, PABlocks.PURPUR_STONE_SLAB.get(), PABlocks.PURPUR_STONE.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS,PABlocks.PURPUR_STONE_WALL.get(), PABlocks.PURPUR_STONE.get());
 
+        // ---- DARK PURPUR STONE RECIPES ---- /
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PABlocks.DARK_PURPUR_STONE.get(), 8)
+                .pattern("PPP")
+                .pattern("PDP")
+                .pattern("PPP")
+                .define('P', PABlocks.PURPUR_STONE)
+                .define('D', Items.BLACK_DYE)
+                .unlockedBy("has_purpur_stone", has(PABlocks.PURPUR_STONE)).save(recipeOutput);
+
+        stairBuilder(PABlocks.DARK_PURPUR_STONE_STAIRS.get(), Ingredient.of(PABlocks.DARK_PURPUR_STONE)).group("dark_purpur_stone")
+                .unlockedBy("has_dark_purpur_stone", has(PABlocks.DARK_PURPUR_STONE.get())).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, PABlocks.DARK_PURPUR_STONE_SLAB.get(), PABlocks.DARK_PURPUR_STONE.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS,PABlocks.DARK_PURPUR_STONE_WALL.get(), PABlocks.DARK_PURPUR_STONE.get());
+
         // ---- STONE CUTTING RECIPES ---- //
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_STAIRS.get());
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_SLAB.get());
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_WALL.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_STAIRS.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_SLAB.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_WALL.get());
     }
 
     private void addStonecuttingRecipe(RecipeOutput recipeOutput, Block input, Block output) {

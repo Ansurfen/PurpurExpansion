@@ -2,5 +2,9 @@
   "block.purpuradditions.purpur_stone": "Purpur Stone",
   "block.purpuradditions.purpur_stone_slab": "Purpur Stone Slab",
   "block.purpuradditions.purpur_stone_stairs": "Purpur Stone Stairs",
-  "block.purpuradditions.purpur_stone_wall": "Purpur Stone Wall"
+  "block.purpuradditions.purpur_stone_wall": "Purpur Stone Wall",
+  "block.purpuradditions.dark_purpur_stone": "Dark Purpur Stone",
+  "block.purpuradditions.dark_purpur_stone_slab": "Dark Purpur Stone Slab",
+  "block.purpuradditions.dark_purpur_stone_stairs": "Dark Purpur Stone Stairs",
+  "block.purpuradditions.dark_purpur_stone_wall": "Dark Purpur Stone Wall"
 }

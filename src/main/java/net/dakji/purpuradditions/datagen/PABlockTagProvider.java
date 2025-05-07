@@ -23,15 +23,22 @@ public class PABlockTagProvider extends BlockTagsProvider {
                 .add(PABlocks.PURPUR_STONE.get())
                 .add(PABlocks.PURPUR_STONE_SLAB.get())
                 .add(PABlocks.PURPUR_STONE_STAIRS.get())
-                .add(PABlocks.PURPUR_STONE_WALL.get());
+                .add(PABlocks.PURPUR_STONE_WALL.get())
+                .add(PABlocks.DARK_PURPUR_STONE.get())
+                .add(PABlocks.DARK_PURPUR_STONE_SLAB.get())
+                .add(PABlocks.DARK_PURPUR_STONE_STAIRS.get())
+                .add(PABlocks.DARK_PURPUR_STONE_WALL.get());
 
         tag(BlockTags.STAIRS)
-                .add(PABlocks.PURPUR_STONE_STAIRS.get());
+                .add(PABlocks.PURPUR_STONE_STAIRS.get())
+                .add(PABlocks.DARK_PURPUR_STONE_STAIRS.get());
 
         tag(BlockTags.SLABS)
-                .add(PABlocks.PURPUR_STONE_SLAB.get());
+                .add(PABlocks.PURPUR_STONE_SLAB.get())
+                .add(PABlocks.DARK_PURPUR_STONE_SLAB.get());
 
         tag(BlockTags.WALLS)
-                .add(PABlocks.PURPUR_STONE_WALL.get());
+                .add(PABlocks.PURPUR_STONE_WALL.get())
+                .add(PABlocks.DARK_PURPUR_STONE_WALL.get());
     }
 }

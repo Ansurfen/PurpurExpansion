@@ -21,6 +21,11 @@ public class PABlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(PABlocks.PURPUR_STONE_STAIRS.get());
         add(PABlocks.PURPUR_STONE_SLAB.get(), block -> createSlabItemTable(PABlocks.PURPUR_STONE_SLAB.get()));
         dropSelf(PABlocks.PURPUR_STONE_WALL.get());
+
+        dropSelf(PABlocks.DARK_PURPUR_STONE.get());
+        dropSelf(PABlocks.DARK_PURPUR_STONE_STAIRS.get());
+        add(PABlocks.DARK_PURPUR_STONE_SLAB.get(), block -> createSlabItemTable(PABlocks.DARK_PURPUR_STONE_SLAB.get()));
+        dropSelf(PABlocks.DARK_PURPUR_STONE_WALL.get());
     }
 
     @Override

@@ -3,6 +3,10 @@
     "purpuradditions:purpur_stone",
     "purpuradditions:purpur_stone_slab",
     "purpuradditions:purpur_stone_stairs",
-    "purpuradditions:purpur_stone_wall"
+    "purpuradditions:purpur_stone_wall",
+    "purpuradditions:dark_purpur_stone",
+    "purpuradditions:dark_purpur_stone_slab",
+    "purpuradditions:dark_purpur_stone_stairs",
+    "purpuradditions:dark_purpur_stone_wall"
   ]
 }
