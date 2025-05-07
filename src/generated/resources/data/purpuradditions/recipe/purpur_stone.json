@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "P": {
+      "item": "minecraft:popped_chorus_fruit"
+    }
+  },
+  "pattern": [
+    "PC",
+    "CP"
+  ],
+  "result": {
+    "count": 2,
+    "id": "purpuradditions:purpur_stone"
+  }
+}

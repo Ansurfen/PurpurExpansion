@@ -20,6 +20,23 @@ public class PARecipeProvider extends RecipeProvider implements IConditionBuilde
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
+        // ---- PURPUR STONE RECIPES ---- //
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PABlocks.PURPUR_STONE.get(), 2)
+                .pattern("PC")
+                .pattern("CP")
+                .define('P', Items.POPPED_CHORUS_FRUIT)
+                .define('C', Items.COBBLESTONE)
+                .unlockedBy("has_popped_chorus_fruit", has(Items.POPPED_CHORUS_FRUIT)).save(recipeOutput);
+
+        stairBuilder(PABlocks.PURPUR_STONE_STAIRS.get(), Ingredient.of(PABlocks.PURPUR_STONE)).group("purpur_stone")
+                .unlockedBy("has_purpur_stone", has(PABlocks.PURPUR_STONE.get())).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, PABlocks.PURPUR_STONE_SLAB.get(), PABlocks.PURPUR_STONE.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS,PABlocks.PURPUR_STONE_WALL.get(), PABlocks.PURPUR_STONE.get());
+
+        // ---- STONE CUTTING RECIPES ---- //
+        addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_STAIRS.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_SLAB.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_WALL.get());
     }
 
     private void addStonecuttingRecipe(RecipeOutput recipeOutput, Block input, Block output) {

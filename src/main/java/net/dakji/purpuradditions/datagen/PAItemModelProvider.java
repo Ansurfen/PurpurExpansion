@@ -16,6 +16,7 @@ public class PAItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        wallItem(PABlocks.PURPUR_STONE_WALL, PABlocks.PURPUR_STONE);
     }
 
     public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

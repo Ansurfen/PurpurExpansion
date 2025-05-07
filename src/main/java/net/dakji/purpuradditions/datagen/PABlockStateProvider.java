@@ -15,6 +15,13 @@ public class PABlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(PABlocks.PURPUR_STONE);
+        stairsBlock(PABlocks.PURPUR_STONE_STAIRS.get(), blockTexture(PABlocks.PURPUR_STONE.get()));
+        slabBlock(PABlocks.PURPUR_STONE_SLAB.get(), blockTexture(PABlocks.PURPUR_STONE.get()), blockTexture(PABlocks.PURPUR_STONE.get()));
+        wallBlock(PABlocks.PURPUR_STONE_WALL.get(), blockTexture(PABlocks.PURPUR_STONE.get()));
+
+        blockItem(PABlocks.PURPUR_STONE_STAIRS);
+        blockItem(PABlocks.PURPUR_STONE_SLAB);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
