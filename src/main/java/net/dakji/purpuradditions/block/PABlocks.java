@@ -41,6 +41,10 @@ public class PABlocks {
     public static final DeferredBlock<WallBlock> DARK_PURPUR_STONE_WALL = registerBlock("dark_purpur_stone_wall", () ->
             new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
+    // ---- PURPUR SHROOMLIGHT ---- //
+    public static final DeferredBlock<Block> PURPUR_SHROOMLIGHT = registerBlock("purpur_shroomlight",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SHROOMLIGHT).mapColor(MapColor.COLOR_PURPLE)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

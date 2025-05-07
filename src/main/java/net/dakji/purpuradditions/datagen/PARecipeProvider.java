@@ -47,6 +47,13 @@ public class PARecipeProvider extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, PABlocks.DARK_PURPUR_STONE_SLAB.get(), PABlocks.DARK_PURPUR_STONE.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS,PABlocks.DARK_PURPUR_STONE_WALL.get(), PABlocks.DARK_PURPUR_STONE.get());
 
+        // ---- PURPUR SHROOMLIGHT RECIPE ---- //
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PABlocks.PURPUR_SHROOMLIGHT.get())
+                .pattern("PS")
+                .define('P', Items.POPPED_CHORUS_FRUIT)
+                .define('S', Items.SHROOMLIGHT)
+                .unlockedBy("has_popped_chorus_fruit", has(Items.POPPED_CHORUS_FRUIT)).save(recipeOutput);
+
         // ---- STONE CUTTING RECIPES ---- //
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_STAIRS.get());
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_SLAB.get());

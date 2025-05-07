@@ -40,5 +40,7 @@ public class PABlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WALLS)
                 .add(PABlocks.PURPUR_STONE_WALL.get())
                 .add(PABlocks.DARK_PURPUR_STONE_WALL.get());
+
+        tag(BlockTags.MINEABLE_WITH_HOE).add(PABlocks.PURPUR_SHROOMLIGHT.get());
     }
 }
