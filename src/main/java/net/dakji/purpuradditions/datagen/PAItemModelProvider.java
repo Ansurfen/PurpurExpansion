@@ -18,6 +18,7 @@ public class PAItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         wallItem(PABlocks.PURPUR_STONE_WALL, PABlocks.PURPUR_STONE);
         wallItem(PABlocks.DARK_PURPUR_STONE_WALL, PABlocks.DARK_PURPUR_STONE);
+        wallItem(PABlocks.DARK_PURPUR_STONE_BRICK_WALL, PABlocks.DARK_PURPUR_STONE_BRICKS);
     }
 
     public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

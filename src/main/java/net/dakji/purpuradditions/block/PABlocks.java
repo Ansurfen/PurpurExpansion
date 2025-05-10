@@ -17,33 +17,25 @@ public class PABlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PurpurAdditions.MODID);
 
     // ---- PURPUR STONE ---- //
-    public static final DeferredBlock<Block> PURPUR_STONE = registerBlock("purpur_stone", () ->
-            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
-
-    public static final DeferredBlock<SlabBlock> PURPUR_STONE_SLAB = registerBlock("purpur_stone_slab", () ->
-            new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
-
-    public static final DeferredBlock<StairBlock> PURPUR_STONE_STAIRS = registerBlock("purpur_stone_stairs", () ->
-            new StairBlock(PABlocks.PURPUR_STONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
-
-    public static final DeferredBlock<WallBlock> PURPUR_STONE_WALL = registerBlock("purpur_stone_wall", () ->
-            new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<Block> PURPUR_STONE = registerBlock("purpur_stone", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<SlabBlock> PURPUR_STONE_SLAB = registerBlock("purpur_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<StairBlock> PURPUR_STONE_STAIRS = registerBlock("purpur_stone_stairs", () -> new StairBlock(PABlocks.PURPUR_STONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<WallBlock> PURPUR_STONE_WALL = registerBlock("purpur_stone_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     // ---- DARK PURPUR STONE ---- //
-    public static final DeferredBlock<Block> DARK_PURPUR_STONE = registerBlock("dark_purpur_stone", () ->
-            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
-    public static final DeferredBlock<SlabBlock> DARK_PURPUR_STONE_SLAB = registerBlock("dark_purpur_stone_slab", () ->
-            new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<Block> DARK_PURPUR_STONE = registerBlock("dark_purpur_stone", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<SlabBlock> DARK_PURPUR_STONE_SLAB = registerBlock("dark_purpur_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<StairBlock> DARK_PURPUR_STONE_STAIRS = registerBlock("dark_purpur_stone_stairs", () -> new StairBlock(PABlocks.DARK_PURPUR_STONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<WallBlock> DARK_PURPUR_STONE_WALL = registerBlock("dark_purpur_stone_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-    public static final DeferredBlock<StairBlock> DARK_PURPUR_STONE_STAIRS = registerBlock("dark_purpur_stone_stairs", () ->
-            new StairBlock(PABlocks.DARK_PURPUR_STONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
-
-    public static final DeferredBlock<WallBlock> DARK_PURPUR_STONE_WALL = registerBlock("dark_purpur_stone_wall", () ->
-            new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    // ---- DARK PURPUR STONE BRICKS ---- //
+    public static final DeferredBlock<Block> DARK_PURPUR_STONE_BRICKS = registerBlock("dark_purpur_stone_bricks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<SlabBlock> DARK_PURPUR_STONE_BRICK_SLAB = registerBlock("dark_purpur_stone_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<StairBlock> DARK_PURPUR_STONE_BRICK_STAIRS = registerBlock("dark_purpur_stone_brick_stairs", () -> new StairBlock(PABlocks.DARK_PURPUR_STONE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<WallBlock> DARK_PURPUR_STONE_BRICK_WALL = registerBlock("dark_purpur_stone_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     // ---- PURPUR SHROOMLIGHT ---- //
-    public static final DeferredBlock<Block> PURPUR_SHROOMLIGHT = registerBlock("purpur_shroomlight",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SHROOMLIGHT).mapColor(MapColor.COLOR_PURPLE)));
+    public static final DeferredBlock<Block> PURPUR_SHROOMLIGHT = registerBlock("purpur_shroomlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SHROOMLIGHT).mapColor(MapColor.COLOR_PURPLE)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

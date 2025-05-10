@@ -47,6 +47,18 @@ public class PARecipeProvider extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, PABlocks.DARK_PURPUR_STONE_SLAB.get(), PABlocks.DARK_PURPUR_STONE.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS,PABlocks.DARK_PURPUR_STONE_WALL.get(), PABlocks.DARK_PURPUR_STONE.get());
 
+        // ---- DARK PURPUR STONE BRICKS RECIPES ---- /
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PABlocks.DARK_PURPUR_STONE_BRICKS.get(), 4)
+                .pattern("PP")
+                .pattern("PP")
+                .define('P', PABlocks.DARK_PURPUR_STONE)
+                .unlockedBy("has_dark_purpur_stone", has(PABlocks.DARK_PURPUR_STONE)).save(recipeOutput);
+
+        stairBuilder(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS.get(), Ingredient.of(PABlocks.DARK_PURPUR_STONE_BRICKS)).group("dark_purpur_stone_bricks")
+                .unlockedBy("has_dark_purpur_stone_bricks", has(PABlocks.DARK_PURPUR_STONE_BRICKS.get())).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get(), PABlocks.DARK_PURPUR_STONE_BRICKS.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS,PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get(), PABlocks.DARK_PURPUR_STONE_BRICKS.get());
+
         // ---- PURPUR SHROOMLIGHT RECIPE ---- //
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PABlocks.PURPUR_SHROOMLIGHT.get())
                 .pattern("PS")
@@ -58,9 +70,18 @@ public class PARecipeProvider extends RecipeProvider implements IConditionBuilde
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_STAIRS.get());
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_SLAB.get());
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.PURPUR_STONE_WALL.get());
+
         addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_STAIRS.get());
         addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_SLAB.get());
         addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_WALL.get());
+
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_BRICKS.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE_BRICKS.get(), PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE_BRICKS.get(), PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE_BRICKS.get(), PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get());
     }
 
     private void addStonecuttingRecipe(RecipeOutput recipeOutput, Block input, Block output) {
