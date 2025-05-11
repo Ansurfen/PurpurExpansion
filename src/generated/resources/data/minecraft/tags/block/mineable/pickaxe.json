@@ -11,6 +11,10 @@
     "purpuradditions:dark_purpur_stone_bricks",
     "purpuradditions:dark_purpur_stone_brick_slab",
     "purpuradditions:dark_purpur_stone_brick_stairs",
-    "purpuradditions:dark_purpur_stone_brick_wall"
+    "purpuradditions:dark_purpur_stone_brick_wall",
+    "purpuradditions:dark_purpur_stone_tiles",
+    "purpuradditions:dark_purpur_stone_tile_slab",
+    "purpuradditions:dark_purpur_stone_tile_stairs",
+    "purpuradditions:dark_purpur_stone_tile_wall"
   ]
 }

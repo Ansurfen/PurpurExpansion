@@ -34,6 +34,12 @@ public class PABlocks {
     public static final DeferredBlock<StairBlock> DARK_PURPUR_STONE_BRICK_STAIRS = registerBlock("dark_purpur_stone_brick_stairs", () -> new StairBlock(PABlocks.DARK_PURPUR_STONE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
     public static final DeferredBlock<WallBlock> DARK_PURPUR_STONE_BRICK_WALL = registerBlock("dark_purpur_stone_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
+    // ---- DARK PURPUR STONE TILES ---- //
+    public static final DeferredBlock<Block> DARK_PURPUR_STONE_TILES = registerBlock("dark_purpur_stone_tiles", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<SlabBlock> DARK_PURPUR_STONE_TILE_SLAB = registerBlock("dark_purpur_stone_tile_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<StairBlock> DARK_PURPUR_STONE_TILE_STAIRS = registerBlock("dark_purpur_stone_tile_stairs", () -> new StairBlock(PABlocks.DARK_PURPUR_STONE_TILES.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+    public static final DeferredBlock<WallBlock> DARK_PURPUR_STONE_TILE_WALL = registerBlock("dark_purpur_stone_tile_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
     // ---- PURPUR SHROOMLIGHT ---- //
     public static final DeferredBlock<Block> PURPUR_SHROOMLIGHT = registerBlock("purpur_shroomlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SHROOMLIGHT).mapColor(MapColor.COLOR_PURPLE)));
 

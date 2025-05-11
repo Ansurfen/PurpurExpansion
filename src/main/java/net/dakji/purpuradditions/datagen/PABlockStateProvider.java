@@ -33,10 +33,17 @@ public class PABlockStateProvider extends BlockStateProvider {
         slabBlock(PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get(), blockTexture(PABlocks.DARK_PURPUR_STONE_BRICKS.get()), blockTexture(PABlocks.DARK_PURPUR_STONE_BRICKS.get()));
         wallBlock(PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get(), blockTexture(PABlocks.DARK_PURPUR_STONE_BRICKS.get()));
 
+        blockWithItem(PABlocks.DARK_PURPUR_STONE_TILES);
+        stairsBlock(PABlocks.DARK_PURPUR_STONE_TILE_STAIRS.get(), blockTexture(PABlocks.DARK_PURPUR_STONE_TILES.get()));
+        slabBlock(PABlocks.DARK_PURPUR_STONE_TILE_SLAB.get(), blockTexture(PABlocks.DARK_PURPUR_STONE_TILES.get()), blockTexture(PABlocks.DARK_PURPUR_STONE_TILES.get()));
+        wallBlock(PABlocks.DARK_PURPUR_STONE_TILE_WALL.get(), blockTexture(PABlocks.DARK_PURPUR_STONE_TILES.get()));
+
         blockItem(PABlocks.DARK_PURPUR_STONE_STAIRS);
         blockItem(PABlocks.DARK_PURPUR_STONE_SLAB);
         blockItem(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS);
         blockItem(PABlocks.DARK_PURPUR_STONE_BRICK_SLAB);
+        blockItem(PABlocks.DARK_PURPUR_STONE_TILE_STAIRS);
+        blockItem(PABlocks.DARK_PURPUR_STONE_TILE_SLAB);
 
         blockWithItem(PABlocks.PURPUR_SHROOMLIGHT);
 

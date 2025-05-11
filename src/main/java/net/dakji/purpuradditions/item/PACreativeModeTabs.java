@@ -34,6 +34,11 @@ public class PACreativeModeTabs {
                         output.accept(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS);
                         output.accept(PABlocks.DARK_PURPUR_STONE_BRICK_WALL);
 
+                        output.accept(PABlocks.DARK_PURPUR_STONE_TILES);
+                        output.accept(PABlocks.DARK_PURPUR_STONE_TILE_SLAB);
+                        output.accept(PABlocks.DARK_PURPUR_STONE_TILE_STAIRS);
+                        output.accept(PABlocks.DARK_PURPUR_STONE_TILE_WALL);
+
                         output.accept(PABlocks.PURPUR_SHROOMLIGHT);
                     }).build());
 

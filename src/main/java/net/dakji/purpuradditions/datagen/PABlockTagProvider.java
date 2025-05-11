@@ -31,22 +31,29 @@ public class PABlockTagProvider extends BlockTagsProvider {
                 .add(PABlocks.DARK_PURPUR_STONE_BRICKS.get())
                 .add(PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get())
                 .add(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS.get())
-                .add(PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get());
+                .add(PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get())
+                .add(PABlocks.DARK_PURPUR_STONE_TILES.get())
+                .add(PABlocks.DARK_PURPUR_STONE_TILE_SLAB.get())
+                .add(PABlocks.DARK_PURPUR_STONE_TILE_STAIRS.get())
+                .add(PABlocks.DARK_PURPUR_STONE_TILE_WALL.get());
 
         tag(BlockTags.STAIRS)
                 .add(PABlocks.PURPUR_STONE_STAIRS.get())
                 .add(PABlocks.DARK_PURPUR_STONE_STAIRS.get())
-                .add(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS.get());
+                .add(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS.get())
+                .add(PABlocks.DARK_PURPUR_STONE_TILE_STAIRS.get());
 
         tag(BlockTags.SLABS)
                 .add(PABlocks.PURPUR_STONE_SLAB.get())
                 .add(PABlocks.DARK_PURPUR_STONE_SLAB.get())
-                .add(PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get());
+                .add(PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get())
+                .add(PABlocks.DARK_PURPUR_STONE_TILE_SLAB.get());
 
         tag(BlockTags.WALLS)
                 .add(PABlocks.PURPUR_STONE_WALL.get())
                 .add(PABlocks.DARK_PURPUR_STONE_WALL.get())
-                .add(PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get());
+                .add(PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get())
+                .add(PABlocks.DARK_PURPUR_STONE_TILE_WALL.get());
 
         tag(BlockTags.MINEABLE_WITH_HOE).add(PABlocks.PURPUR_SHROOMLIGHT.get());
     }
