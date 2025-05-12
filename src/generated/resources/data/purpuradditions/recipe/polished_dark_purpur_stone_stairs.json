@@ -1,17 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
+  "group": "polished_dark_purpur_stone",
   "key": {
-    "P": {
+    "#": {
       "item": "purpuradditions:polished_dark_purpur_stone"
     }
   },
   "pattern": [
-    "PP",
-    "PP"
+    "#  ",
+    "## ",
+    "###"
   ],
   "result": {
     "count": 4,
-    "id": "purpuradditions:dark_purpur_stone_bricks"
+    "id": "purpuradditions:polished_dark_purpur_stone_stairs"
   }
 }

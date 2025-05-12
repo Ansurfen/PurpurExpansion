@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "purpuradditions:dark_purpur_stone_bricks"
+        "recipe": "minecraft:dark_purpur_stone_brick_wall_from_polished_dark_purpur_stone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "purpuradditions:dark_purpur_stone_bricks"
+      "minecraft:dark_purpur_stone_brick_wall_from_polished_dark_purpur_stone_stonecutting"
     ]
   }
 }

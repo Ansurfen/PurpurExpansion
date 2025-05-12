@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "purpuradditions:dark_purpur_stone_bricks"
+        "recipe": "minecraft:polished_dark_purpur_stone_stairs_from_polished_dark_purpur_stone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "purpuradditions:dark_purpur_stone_bricks"
+      "minecraft:polished_dark_purpur_stone_stairs_from_polished_dark_purpur_stone_stonecutting"
     ]
   }
 }

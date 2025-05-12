@@ -1,17 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
-    "P": {
+    "#": {
       "item": "purpuradditions:polished_dark_purpur_stone"
     }
   },
   "pattern": [
-    "PP",
-    "PP"
+    "###"
   ],
   "result": {
-    "count": 4,
-    "id": "purpuradditions:dark_purpur_stone_bricks"
+    "count": 6,
+    "id": "purpuradditions:polished_dark_purpur_stone_slab"
   }
 }

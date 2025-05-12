@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "purpuradditions:polished_dark_purpur_stone"
+  },
+  "result": {
+    "count": 1,
+    "id": "purpuradditions:polished_dark_purpur_stone_wall"
+  }
+}

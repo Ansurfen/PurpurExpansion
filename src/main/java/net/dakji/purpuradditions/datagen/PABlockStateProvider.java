@@ -28,6 +28,11 @@ public class PABlockStateProvider extends BlockStateProvider {
         slabBlock(PABlocks.DARK_PURPUR_STONE_SLAB.get(), blockTexture(PABlocks.DARK_PURPUR_STONE.get()), blockTexture(PABlocks.DARK_PURPUR_STONE.get()));
         wallBlock(PABlocks.DARK_PURPUR_STONE_WALL.get(), blockTexture(PABlocks.DARK_PURPUR_STONE.get()));
 
+        blockWithItem(PABlocks.POLISHED_DARK_PURPUR_STONE);
+        stairsBlock(PABlocks.POLISHED_DARK_PURPUR_STONE_STAIRS.get(), blockTexture(PABlocks.POLISHED_DARK_PURPUR_STONE.get()));
+        slabBlock(PABlocks.POLISHED_DARK_PURPUR_STONE_SLAB.get(), blockTexture(PABlocks.POLISHED_DARK_PURPUR_STONE.get()), blockTexture(PABlocks.POLISHED_DARK_PURPUR_STONE.get()));
+        wallBlock(PABlocks.POLISHED_DARK_PURPUR_STONE_WALL.get(), blockTexture(PABlocks.POLISHED_DARK_PURPUR_STONE.get()));
+
         blockWithItem(PABlocks.DARK_PURPUR_STONE_BRICKS);
         stairsBlock(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS.get(), blockTexture(PABlocks.DARK_PURPUR_STONE_BRICKS.get()));
         slabBlock(PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get(), blockTexture(PABlocks.DARK_PURPUR_STONE_BRICKS.get()), blockTexture(PABlocks.DARK_PURPUR_STONE_BRICKS.get()));
@@ -40,6 +45,8 @@ public class PABlockStateProvider extends BlockStateProvider {
 
         blockItem(PABlocks.DARK_PURPUR_STONE_STAIRS);
         blockItem(PABlocks.DARK_PURPUR_STONE_SLAB);
+        blockItem(PABlocks.POLISHED_DARK_PURPUR_STONE_STAIRS);
+        blockItem(PABlocks.POLISHED_DARK_PURPUR_STONE_SLAB);
         blockItem(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS);
         blockItem(PABlocks.DARK_PURPUR_STONE_BRICK_SLAB);
         blockItem(PABlocks.DARK_PURPUR_STONE_TILE_STAIRS);

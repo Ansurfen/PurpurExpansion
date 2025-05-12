@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "P": {
-      "item": "purpuradditions:polished_dark_purpur_stone"
+      "item": "purpuradditions:dark_purpur_stone"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "purpuradditions:dark_purpur_stone_bricks"
+    "id": "purpuradditions:polished_dark_purpur_stone"
   }
 }

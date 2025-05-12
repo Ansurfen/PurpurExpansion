@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "purpuradditions:block/polished_dark_purpur_stone"
+  }
+}
