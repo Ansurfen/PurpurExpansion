@@ -19,6 +19,7 @@ public class PAItemModelProvider extends ItemModelProvider {
         wallItem(PABlocks.PURPUR_STONE_WALL, PABlocks.PURPUR_STONE);
         wallItem(PABlocks.POLISHED_PURPUR_STONE_WALL, PABlocks.POLISHED_PURPUR_STONE);
         wallItem(PABlocks.PURPUR_STONE_BRICK_WALL, PABlocks.PURPUR_STONE_BRICKS);
+        wallItem(PABlocks.PURPUR_STONE_TILE_WALL, PABlocks.PURPUR_STONE_TILES);
         wallItem(PABlocks.DARK_PURPUR_STONE_WALL, PABlocks.DARK_PURPUR_STONE);
         wallItem(PABlocks.POLISHED_DARK_PURPUR_STONE_WALL, PABlocks.POLISHED_DARK_PURPUR_STONE);
         wallItem(PABlocks.DARK_PURPUR_STONE_BRICK_WALL, PABlocks.DARK_PURPUR_STONE_BRICKS);
