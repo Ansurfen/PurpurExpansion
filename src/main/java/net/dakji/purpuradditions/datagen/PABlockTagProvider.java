@@ -24,6 +24,10 @@ public class PABlockTagProvider extends BlockTagsProvider {
                 .add(PABlocks.PURPUR_STONE_SLAB.get())
                 .add(PABlocks.PURPUR_STONE_STAIRS.get())
                 .add(PABlocks.PURPUR_STONE_WALL.get())
+                .add(PABlocks.POLISHED_PURPUR_STONE.get())
+                .add(PABlocks.POLISHED_PURPUR_STONE_SLAB.get())
+                .add(PABlocks.POLISHED_PURPUR_STONE_STAIRS.get())
+                .add(PABlocks.POLISHED_PURPUR_STONE_WALL.get())
                 .add(PABlocks.DARK_PURPUR_STONE.get())
                 .add(PABlocks.DARK_PURPUR_STONE_SLAB.get())
                 .add(PABlocks.DARK_PURPUR_STONE_STAIRS.get())
@@ -43,6 +47,7 @@ public class PABlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.STAIRS)
                 .add(PABlocks.PURPUR_STONE_STAIRS.get())
+                .add(PABlocks.POLISHED_PURPUR_STONE_STAIRS.get())
                 .add(PABlocks.DARK_PURPUR_STONE_STAIRS.get())
                 .add(PABlocks.POLISHED_DARK_PURPUR_STONE_STAIRS.get())
                 .add(PABlocks.DARK_PURPUR_STONE_BRICK_STAIRS.get())
@@ -50,6 +55,7 @@ public class PABlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.SLABS)
                 .add(PABlocks.PURPUR_STONE_SLAB.get())
+                .add(PABlocks.POLISHED_PURPUR_STONE_SLAB.get())
                 .add(PABlocks.DARK_PURPUR_STONE_SLAB.get())
                 .add(PABlocks.POLISHED_DARK_PURPUR_STONE_SLAB.get())
                 .add(PABlocks.DARK_PURPUR_STONE_BRICK_SLAB.get())
@@ -57,6 +63,7 @@ public class PABlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.WALLS)
                 .add(PABlocks.PURPUR_STONE_WALL.get())
+                .add(PABlocks.POLISHED_PURPUR_STONE_WALL.get())
                 .add(PABlocks.DARK_PURPUR_STONE_WALL.get())
                 .add(PABlocks.POLISHED_DARK_PURPUR_STONE_WALL.get())
                 .add(PABlocks.DARK_PURPUR_STONE_BRICK_WALL.get())

@@ -33,6 +33,18 @@ public class PARecipeProvider extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, PABlocks.PURPUR_STONE_SLAB.get(), PABlocks.PURPUR_STONE.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS,PABlocks.PURPUR_STONE_WALL.get(), PABlocks.PURPUR_STONE.get());
 
+        // ---- POLISHED PURPUR STONE RECIPES ---- //
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PABlocks.POLISHED_PURPUR_STONE.get(), 4)
+                .pattern("PP")
+                .pattern("PP")
+                .define('P', PABlocks.PURPUR_STONE)
+                .unlockedBy("has_purpur_stone", has(PABlocks.PURPUR_STONE)).save(recipeOutput);
+
+        stairBuilder(PABlocks.POLISHED_PURPUR_STONE_STAIRS.get(), Ingredient.of(PABlocks.POLISHED_PURPUR_STONE)).group("polished_purpur_stone")
+                .unlockedBy("has_polished_purpur_stone", has(PABlocks.POLISHED_PURPUR_STONE.get())).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, PABlocks.POLISHED_PURPUR_STONE_SLAB.get(), PABlocks.POLISHED_PURPUR_STONE.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS,PABlocks.POLISHED_PURPUR_STONE_WALL.get(), PABlocks.POLISHED_PURPUR_STONE.get());
+
 
         // ---- DARK PURPUR STONE RECIPES ---- /
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PABlocks.DARK_PURPUR_STONE.get(), 8)
@@ -98,6 +110,9 @@ public class PARecipeProvider extends RecipeProvider implements IConditionBuilde
 
         // ---- STONE CUTTING RECIPES ---- //
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), null, PABlocks.PURPUR_STONE_STAIRS.get(), PABlocks.PURPUR_STONE_SLAB.get(), PABlocks.PURPUR_STONE_WALL.get());
+
+        addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), PABlocks.POLISHED_PURPUR_STONE.get(), PABlocks.POLISHED_PURPUR_STONE_STAIRS.get(), PABlocks.POLISHED_PURPUR_STONE_SLAB.get(), PABlocks.POLISHED_PURPUR_STONE_WALL.get());
+        addStonecuttingRecipe(recipeOutput, PABlocks.POLISHED_PURPUR_STONE.get(), null, PABlocks.POLISHED_PURPUR_STONE_STAIRS.get(), PABlocks.POLISHED_PURPUR_STONE_SLAB.get(), PABlocks.POLISHED_PURPUR_STONE_WALL.get());
 
         addStonecuttingRecipe(recipeOutput, PABlocks.DARK_PURPUR_STONE.get(), null, PABlocks.DARK_PURPUR_STONE_STAIRS.get(), PABlocks.DARK_PURPUR_STONE_SLAB.get(), PABlocks.DARK_PURPUR_STONE_WALL.get());
 

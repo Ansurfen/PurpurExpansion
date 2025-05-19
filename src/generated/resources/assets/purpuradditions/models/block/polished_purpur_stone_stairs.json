@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "purpuradditions:block/polished_purpur_stone",
+    "side": "purpuradditions:block/polished_purpur_stone",
+    "top": "purpuradditions:block/polished_purpur_stone"
+  }
+}
