@@ -130,6 +130,13 @@ public class PARecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('S', Items.SHROOMLIGHT)
                 .unlockedBy("has_popped_chorus_fruit", has(Items.POPPED_CHORUS_FRUIT)).save(recipeOutput);
 
+        // ---- PURPUR GLOWSTONE RECIPE ---- //
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, PABlocks.PURPUR_GLOWSTONE.get())
+                .pattern("PG")
+                .define('P', Items.POPPED_CHORUS_FRUIT)
+                .define('G', Items.GLOWSTONE)
+                .unlockedBy("has_glowstone", has(Items.GLOWSTONE)).save(recipeOutput);
+
 
         // ---- STONE CUTTING RECIPES ---- //
         addStonecuttingRecipe(recipeOutput, PABlocks.PURPUR_STONE.get(), null, PABlocks.PURPUR_STONE_STAIRS.get(), PABlocks.PURPUR_STONE_SLAB.get(), PABlocks.PURPUR_STONE_WALL.get());

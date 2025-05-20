@@ -75,6 +75,8 @@ public class PABlockStateProvider extends BlockStateProvider {
 
         blockWithItem(PABlocks.PURPUR_SHROOMLIGHT);
 
+        blockWithItem(PABlocks.PURPUR_GLOWSTONE);
+
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

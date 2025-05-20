@@ -60,6 +60,8 @@ public class PACreativeModeTabs {
                         output.accept(PABlocks.DARK_PURPUR_STONE_TILE_WALL);
 
                         output.accept(PABlocks.PURPUR_SHROOMLIGHT);
+
+                        output.accept(PABlocks.PURPUR_GLOWSTONE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -68,6 +68,9 @@ public class PABlocks {
     // ---- PURPUR SHROOMLIGHT ---- //
     public static final DeferredBlock<Block> PURPUR_SHROOMLIGHT = registerBlock("purpur_shroomlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SHROOMLIGHT).mapColor(MapColor.COLOR_PURPLE)));
 
+    // ---- PURPUR GLOWSTONE ---- //
+    public static final DeferredBlock<Block> PURPUR_GLOWSTONE = registerBlock("purpur_glowstone", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE).mapColor(MapColor.COLOR_PURPLE)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

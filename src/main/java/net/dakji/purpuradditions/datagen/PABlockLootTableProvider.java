@@ -58,6 +58,8 @@ public class PABlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(PABlocks.DARK_PURPUR_STONE_TILE_WALL.get());
 
         dropSelf(PABlocks.PURPUR_SHROOMLIGHT.get());
+
+        dropSelf(PABlocks.PURPUR_GLOWSTONE.get());
     }
 
     @Override

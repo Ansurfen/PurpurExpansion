@@ -51,7 +51,8 @@ public class PABlockTagProvider extends BlockTagsProvider {
                 .add(PABlocks.DARK_PURPUR_STONE_TILES.get())
                 .add(PABlocks.DARK_PURPUR_STONE_TILE_SLAB.get())
                 .add(PABlocks.DARK_PURPUR_STONE_TILE_STAIRS.get())
-                .add(PABlocks.DARK_PURPUR_STONE_TILE_WALL.get());
+                .add(PABlocks.DARK_PURPUR_STONE_TILE_WALL.get())
+                .add(PABlocks.PURPUR_GLOWSTONE.get());
 
         tag(BlockTags.STAIRS)
                 .add(PABlocks.PURPUR_STONE_STAIRS.get())
