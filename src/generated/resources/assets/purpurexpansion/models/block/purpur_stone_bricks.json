@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "purpurexpansion:block/purpur_stone_bricks"
+  }
+}

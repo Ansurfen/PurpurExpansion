@@ -1,12 +1,12 @@
 {
   "values": [
-    "purpuradditions:purpur_stone_wall",
-    "purpuradditions:polished_purpur_stone_wall",
-    "purpuradditions:purpur_stone_brick_wall",
-    "purpuradditions:purpur_stone_tile_wall",
-    "purpuradditions:dark_purpur_stone_wall",
-    "purpuradditions:polished_dark_purpur_stone_wall",
-    "purpuradditions:dark_purpur_stone_brick_wall",
-    "purpuradditions:dark_purpur_stone_tile_wall"
+    "purpurexpansion:purpur_stone_wall",
+    "purpurexpansion:polished_purpur_stone_wall",
+    "purpurexpansion:purpur_stone_brick_wall",
+    "purpurexpansion:purpur_stone_tile_wall",
+    "purpurexpansion:dark_purpur_stone_wall",
+    "purpurexpansion:polished_dark_purpur_stone_wall",
+    "purpurexpansion:dark_purpur_stone_brick_wall",
+    "purpurexpansion:dark_purpur_stone_tile_wall"
   ]
 }

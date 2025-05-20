@@ -1,10 +1,10 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "purpuradditions:purpur_stone"
+    "item": "purpurexpansion:purpur_stone"
   },
   "result": {
     "count": 1,
-    "id": "purpuradditions:purpur_stone_brick_stairs"
+    "id": "purpurexpansion:purpur_stone_brick_stairs"
   }
 }

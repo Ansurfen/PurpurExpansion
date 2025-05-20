@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "purpurexpansion:block/dark_purpur_stone_tiles"
+  }
+}

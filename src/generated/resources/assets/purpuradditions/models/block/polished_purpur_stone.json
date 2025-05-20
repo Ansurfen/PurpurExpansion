@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "purpuradditions:block/polished_purpur_stone"
-  }
-}

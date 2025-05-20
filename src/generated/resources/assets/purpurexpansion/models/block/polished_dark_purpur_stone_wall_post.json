@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "purpurexpansion:block/polished_dark_purpur_stone"
+  }
+}

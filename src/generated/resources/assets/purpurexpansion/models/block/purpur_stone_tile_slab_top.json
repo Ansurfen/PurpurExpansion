@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "purpurexpansion:block/purpur_stone_tiles",
+    "side": "purpurexpansion:block/purpur_stone_tiles",
+    "top": "purpurexpansion:block/purpur_stone_tiles"
+  }
+}

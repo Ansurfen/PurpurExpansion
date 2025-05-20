@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "dark_purpur_stone",
+  "key": {
+    "#": {
+      "item": "purpurexpansion:dark_purpur_stone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "purpurexpansion:dark_purpur_stone_stairs"
+  }
+}
